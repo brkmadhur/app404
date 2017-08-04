@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content_select__contacts"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="team_404.app_404.SELECT_CONTACTS"
+    tools:showIn="@layout/activity_select__contacts">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:text="Message :"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/MSG_TXT"
+                android:textColor="@android:color/black"
+                android:layout_weight="1" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/MSG_TV"
+                android:textColor="@android:color/black"
+                android:textAlignment="center"
+                android:layout_weight="1" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:text="Via :"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/VIA_TXT"
+                android:layout_weight="1"
+                android:textColor="@android:color/black" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/VIA_TV"
+                android:layout_weight="1"
+                android:textAlignment="viewStart"
+                android:textColor="@android:color/black" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:divider="?attr/dividerHorizontal">
+
+            <TextView
+                android:text="Contact Info :"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/Contacts_header"
+                android:layout_weight="1"
+                android:textAlignment="center" />
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <Button
+                    android:text="Refresh"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/Refresh"
+                    android:layout_weight="1"
+                    android:visibility="gone" />
+
+                <CheckBox
+                    android:text="Select All"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/SELECT_ALL_CONTACTS"
+                    android:layout_weight="1" />
+            </LinearLayout>
+
+            <TextView
+                android:text="Status :"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/STATUS_SEND"
+                android:layout_weight="1"
+                android:textAlignment="center" />
+        </LinearLayout>
+
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:id="@+id/CONTACTS_LV"
+            android:divider="@android:drawable/divider_horizontal_textfield" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:text="SEND.."
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/SEND_B"
+                android:layout_weight="1" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>
